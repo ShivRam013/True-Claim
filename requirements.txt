@@ -14,3 +14,4 @@ certifi
 litellm
 ragas==0.4.4
 langsmith
+streamlit
