@@ -1,0 +1,16 @@
+langchain
+langchain-community==0.4.1
+langchain-text-splitters
+langchain-chroma
+langchain-huggingface
+langchain-groq
+sentence-transformers
+pypdf
+python-dotenv
+rank-bm25
+sentence-transformers
+neo4j
+certifi
+litellm
+ragas==0.4.4
+langsmith

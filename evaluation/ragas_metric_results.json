@@ -1,0 +1,8 @@
+{
+    "claim": "LoRA reduces the number of trainable parameters compared with full fine-tuning.",
+    "reference": "LoRA freezes the pretrained model weights and introduces trainable low-rank matrices into selected model layers. During fine-tuning, only these low-rank parameters are updated instead of updating all pretrained model parameters. This substantially reduces the number of trainable parameters compared with full fine-tuning.",
+    "faithfulness_score": 0.6875,
+    "relevancy_score": 0.9431757900641822,
+    "precision_score": 0.9593749999880078,
+    "recall_score": 1.0
+}
