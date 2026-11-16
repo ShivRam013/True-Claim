@@ -1,37 +1,36 @@
-from typing import TypedDict, List, Dict, Any
+from typing import Any, Dict, List, TypedDict
 
 
 class InvestigationState(TypedDict):
+    """State shared between all nodes in the LangGraph workflow."""
 
-    # Original claim
+    # Original user claim
     claim: str
 
     # Claim decomposition
     subclaims: List[str]
 
-    # Extracted entities
+    # Entities extracted from the claim
     entities: List[Dict[str, Any]]
 
-    # Retrieved evidence
+    # Retrieved and analyzed evidence
     evidence: List[Dict[str, Any]]
-
-    # Evidence analysis
     supporting_evidence: List[Dict[str, Any]]
     contradicting_evidence: List[Dict[str, Any]]
+    inconclusive_evidence: List[Dict[str, Any]]
 
     # Investigation control
     needs_more_evidence: bool
     iterations: int
 
-    inconclusive_evidence: List[Dict[str, Any]]
-
-    decision: str
-
+    # Search information
     search_queries: List[str]
     new_search_queries: List[str]
 
+    # Detected conflicts between evidence
     evidence_conflicts: List[Dict[str, Any]]
 
     # Final result
+    decision: str
     final_verdict: str
     final_report: Dict[str, Any]

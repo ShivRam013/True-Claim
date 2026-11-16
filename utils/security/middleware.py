@@ -2,6 +2,7 @@ from utils.security.pii import anonymize_pii
 
 
 def pii_middleware(claim: str):
+    """Anonymize personally identifiable information in the claim."""
 
     print("\n========== PII MIDDLEWARE ==========")
 
