@@ -15,8 +15,6 @@ venv/
 .env
 .env.*
 
-# Vector database
-chroma_db/
 
 # Python testing and cache
 .pytest_cache/
